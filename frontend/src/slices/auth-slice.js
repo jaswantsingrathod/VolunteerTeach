@@ -60,6 +60,7 @@ const userSlice = createSlice({
       state.token = null;
       state.role = "";
       state.isLoggedIn = false;
+      state.loading = false;
       localStorage.removeItem("token");
       localStorage.removeItem("volunteerFormDraft");
     },

@@ -63,6 +63,15 @@ function Login() {
     }
   };
 
+  // Demo Admin Login
+  const handleDemoAdminLogin = async () => {
+    const demoAdmin = { email: "jass@gmail.com", password: "jass123" };
+    const res = await dispatch(loginUser(demoAdmin));
+    if (res.meta.requestStatus === "fulfilled" && res.payload.user.role === "admin") {
+      navigate("/admin");
+    }
+  };
+
   useEffect(() => {
     if (isLoggedIn) {
       if (role === "admin") {
@@ -142,6 +151,34 @@ function Login() {
                 Create one
               </Link>
             </p>
+            <div className="flex flex-col gap-3">
+              {/* <Button
+                type="submit"
+                disabled={loading}
+                className="w-full h-11 bg-linear-to-r from-rose-500 to-pink-500 hover:from-rose-600 hover:to-pink-600 text-white font-semibold rounded-lg shadow-md shadow-rose-200 hover:shadow-rose-300 hover:shadow-lg transition-all duration-200 border-0"
+              >
+                {loading ? (
+                  <span className="flex items-center justify-center">
+                    <svg className="animate-spin h-5 w-5 mr-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+                    </svg>
+                    Logging In...
+                  </span>
+                ) : (
+                  'Sign In'
+                )}
+              </Button> */}
+              <Button
+                type="button"
+                variant="outline"
+                className="w-full border border-rose-400 text-rose-600 font-semibold hover:bg-rose-50"
+                onClick={handleDemoAdminLogin}
+                disabled={loading}
+              >
+                Demo Admin Login
+              </Button>
+            </div>
           </form>
         </div>
       </div>
