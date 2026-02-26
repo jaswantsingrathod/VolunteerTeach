@@ -53,7 +53,7 @@ function Dashboard() {
 
   if (loading) return (
     <div className="flex items-center justify-center min-h-screen">
-      <p className="text-rose-600 font-bold animate-pulse">Loading profile...</p>
+      <p>Loading profile...</p>
     </div>
   );
 

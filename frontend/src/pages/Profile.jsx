@@ -31,7 +31,7 @@ const Profile = () => {
       <Card>
         <CardContent className="space-y-4 pt-6">
           <h2 className="text-2xl font-bold text-green-600">
-            🎉 You have successfully registered!
+            🎉 You have successfully registered as a Volunteer!
           </h2>
 
           <p><strong>Name:</strong> {profile?.name || "-"}</p>

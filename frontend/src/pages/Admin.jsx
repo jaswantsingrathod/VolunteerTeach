@@ -29,8 +29,8 @@ const Admin = () => {
 
   if (loading)
     return (
-      <div className="min-h-screen flex items-center justify-center bg-rose-50">
-        <p className="text-rose-500 font-semibold text-lg animate-pulse">Loading volunteers...</p>
+      <div className="min-h-screen flex items-center justify-center">
+        <p>Loading volunteers...</p>
       </div>
     );
 

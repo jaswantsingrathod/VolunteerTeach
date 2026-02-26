@@ -72,8 +72,8 @@ function UserRegister() {
       <div className="hidden md:flex flex-col justify-center items-start bg-gradient-to-br from-rose-600 via-rose-500 to-pink-500 text-white p-10 relative overflow-hidden rounded-3xl my-28 ml-16">
 
         {/* Heading */}
-        <h1 className="relative z-10 text-4xl font-extrabold leading-snug mb-3 tracking-tight">
-          Volunteer<span className="text-rose-100">Teach</span>
+        <h1 className="relative z-10 text-4xl font-extrabold leading-snug mb-3 tracking-tight text-gray-900">
+          Volunteer<span className="text-rose-300">Teach</span>
         </h1>
 
         {/* Body text */}

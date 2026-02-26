@@ -97,7 +97,7 @@ function Login() {
               Volunteer<span className="text-rose-500">Teach</span>
             </h1>
             <p className="mt-2 text-sm text-gray-500">
-              Welcome back! Sign in to continue your journey.
+              Welcome back! Sign in to continue.
             </p>
           </div>
 
@@ -168,8 +168,6 @@ function Login() {
 
       {/* RIGHT SIDE PANEL*/}
       <div className="hidden md:flex flex-col justify-center items-center bg-gradient-to-br from-rose-600 via-rose-500 to-pink-500 text-white p-10 relative overflow-hidden rounded-3xl my-28 mr-16">
-
-
         {/* Content */}
         <div className="relative z-10 text-center space-y-4">
           {/* Icon */}
